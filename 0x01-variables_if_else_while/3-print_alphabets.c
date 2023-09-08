@@ -1,31 +1,20 @@
-#include<stdio.h>
+#include <stdio.h>
 
 /**
- * main - Entry point
- *
- * Description: print alphanet in lowercase then in uppercase
+ * main - Prints the alphabet.
  *
  * Return: Always 0 (Success)
-*/
-
+ */
 int main(void)
 {
-	char ch = 'a'
-	char CH = 'A'
+char alp[52] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	int i;
 
-	/*print a - z*/
-	while (ch <= 'z')
+	for (i = 0; i < 52; i++)
 	{
-		putchar(ch);
-		ch++;
-	}
-	/*print A - Z*/
-	while (CH <= 'Z')
-	{
-		putchar(CH);
-		CH++;
+		putchar(alp[i]);
 	}
 	putchar('\n');
-
 	return (0);
 }
+
