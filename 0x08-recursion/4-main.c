@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 #include <stdio.h>
 
 /**
@@ -8,7 +8,8 @@ include "main.h"
  */
 int main(void)
 {
-int r;
+
+	int r;
 	r = _pow_recursion(1, 10);
 	printf("%d\n", r);
 	r = _pow_recursion(1024, 0);
