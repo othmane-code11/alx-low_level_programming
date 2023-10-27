@@ -2,25 +2,25 @@
 #include <stdlib.h>
 
 /**
- * main-print sum of two numbers.
+ * main-print multiplication of two numbers.
  *
  * @argc: numbr of arguments.
  * @argv: array of arg.
  *
- * Return: (0).
+ * Return: (0) success and (1) failed.
  */
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
-	int sum = 0;
+	int mult = 0;
 
 	if (argc == 3)
 	{
-		sum = atoi(argv[1]) * atoi(argv[2]);
-		printf("%d\n", sum);
+		mult = atoi(argv[1]) * atoi(argv[2]);
+		printf("%d\n", mult);
 	}
 	else
 	{
-		printf("error\n");
+		printf("Error\n");
 		return (1);
 	}
 	return (0);
